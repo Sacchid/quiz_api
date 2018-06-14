@@ -34,7 +34,7 @@ class QuizApiSink extends RequestSink {
    router
        .route("/questions/[:index]")
        .generate(()=> new QuestionController());
-   
+   // generate index  
    router.route("/example").listen((request)async {
      return new Response.ok({"key":  "value"});
    });
